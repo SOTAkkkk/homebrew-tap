@@ -7,6 +7,7 @@ class TutorialCliMacos < Formula
     version "1.0.0"
   
     def install
+      bin.install "tutorial-cli-macos"
       system "./configure", *std_configure_args, "--disable-silent-rules"
     end
   
